@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+/* booking.css — matches room1.css colors, fonts and button style */
+
+/* ---------- Hero ---------- */
+.booking_hero{
+    min-height: 220px;
+    height: auto;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.booking_hero p{
+    font-size: 50px;
+    font-weight: 600;
+    color: #D4A373;
+}
+
+.booking_hero h1{
+    color: #F5EBE0;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+
+#hero_sub{
+    color: #F5EBE0;
+    margin: 20px auto 0 auto;
+    max-width: 600px;
+    opacity: 0.85;
+}
+
+/* ---------- Booking body ---------- */
+.booking_body{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+    background-color: #F5EBE0;
+}
+
+/* Room summary strip at the top of the form */
+.booking_summary{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.booking_summary img{
+    width: 120px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.booking_summary h2{
+    color: #1f2937;
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+}
+
+.booking_price .amount{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #D4A373;
+}
+
+.booking_price .per{
+    font-size: 0.95rem;
+    color: #1f2937;
+    opacity: 0.7;
+}
+
+/* ---------- Form ---------- */
+.booking_form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form_row{
+    display: flex;
+    gap: 20px;
+}
+
+.form_group{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_group label{
+    color: #1f2937;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form_group input{
+    height: 48px;
+    padding: 0 14px;
+    border: 1px solid #D4A373;
+    border-radius: 8px;
+    background-color: white;
+    color: #1f2937;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+}
+
+.form_group input:focus{
+    outline: none;
+    border-color: #1f2937;
+}
+
+/* ---------- Buttons (matches .room1_book_btn button) ---------- */
+.booking_submit_btn{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.booking_submit_btn button,
+.booking_message button{
+    height: 60px;
+    width: 250px;
+    color: white;
+    background-color: #D4A373;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.booking_submit_btn button:hover,
+.booking_message button:hover{
+    color: #D4A373;
+    background-color: #1f2937;
+}
+
+/* ---------- Messages ---------- */
+.booking_message{
+    text-align: center;
+    padding: 30px 24px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.booking_message.error{
+    background-color: #fbeceb;
+    color: #b3261e;
+    text-align: left;
+}
+
+.booking_message.error ul{
+    margin: 0;
+    padding-left: 20px;
+}
+
+.booking_message.success{
+    background-color: white;
+    color: #1f2937;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.booking_message.success i{
+    font-size: 2.5rem;
+    color: #D4A373;
+    margin-bottom: 10px;
+}
+
+.booking_message.success h2{
+    color: #1f2937;
+    font-size: 1.8rem;
+    margin: 0 0 10px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px){
+    .booking_body{
+        padding: 40px 16px;
+    }
+    .form_row{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .booking_summary{
+        flex-direction: column;
+        text-align: center;
+    }
+    .booking_hero h1{
+        font-size: 1.8rem;
+    }
+}
+
+/* Universal Button Shape */
+button, .btn-booking, input[type="submit"], .btn {
+  background-color: #D4A373 !important;
+  color: white !important;
+  border-radius: 5px !important;
+  border: none !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+button:hover, .btn-booking:hover, input[type="submit"]:hover, .btn:hover {
+  background-color: #1f2937 !important;
+  color: #E2D8A5 !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Plus Jakarta Sans', sans-serif !important; letter-spacing: 1px; }

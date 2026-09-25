@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Example</title>
+  <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="square">
+      <div class="main_logo">
+        <div class="logo">Platinum </div>
+        <div class="logo_img"><img src="assets\images\main_logo.webp"></div>
+        <div class="logo1">Palace</div>
+      </div>
+    </div>
+
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">The Hotel</a></li>
+      <li><a href="services.html">Our Rooms</a></li>
+      <li><a href="portfolio.html">Food & Drinks</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <button class="booking">Bookings</button>
+    </ul>
+ 
+
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+ <section class="hero">
+    <div class="hero-content">
+      <h1>The Heart Of The Platinum Palace</h1>
+    </div>
+  </section>
+  <div class="main_button">
+     <div class="main_buttons1"><button>Book Now</button></div>
+      <div class="main_buttons2"><button>Contact Us</button></div>
+  </div>
+
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

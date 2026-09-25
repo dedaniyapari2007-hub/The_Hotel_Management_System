@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main_body_1{
+    min-height: 250px;
+    height: auto;
+    width: 100%;
+    background-color: black;
+    padding: 40px 20px;
+  }
+.heading_line_1{
+  color: #D4A373;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+} 
+ .heading_line_2{
+  margin: 30px auto;
+  color: white;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+} 
+.my_button_1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_body_hotel_2{
+  background-color:#F5EBE0;
+  height: auto;
+  width: 100%;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.hotel_2_container{
+  background-color: white;
+  height: auto;
+  min-height: 400px;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.head_1{
+  flex: 1;
+  text-align: center;
+}
+
+.head_1 h1{
+  margin-bottom: 25px;
+  font-size: 2.2rem;
+}
+
+.head_1 p{
+  line-height: 1.8;
+  color: #333;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.hotel_2_container img{
+  flex: 1;
+  height: 400px;
+  width: 100%;
+  max-width: 600px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.main_body_hotel_3{
+  background-color: black;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 20px;
+  height: auto;
+  min-height: 500px;
+  padding: 40px 20px;
+}
+
+#img1{
+  flex: 2;
+  min-height: 300px;
+  margin: 0;
+}
+
+#img1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+#img23{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: 100%;
+}
+
+#img23 img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.main_body_5{
+  background-color: #FFFFFF;
+  height: auto;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .hotel_2_container {
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+  }
+  .hotel_2_container img {
+    height: 260px;
+  }
+  .main_body_hotel_3 {
+    flex-direction: column;
+    padding: 20px 15px;
+  }
+  #img23 img {
+    height: 200px;
+  }
+  .head_1 h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Universal Button Shape */
+button, .btn-booking, input[type="submit"], .btn {
+  background-color: #D4A373 !important;
+  color: white !important;
+  border-radius: 5px !important;
+  border: none !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+button:hover, .btn-booking:hover, input[type="submit"]:hover, .btn:hover {
+  background-color: #1f2937 !important;
+  color: #E2D8A5 !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Plus Jakarta Sans', sans-serif !important; letter-spacing: 1px; }

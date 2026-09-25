@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  }
+
+.heading_part{
+    min-height: 350px;
+    height: auto;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 40px;
+}
+
+#line1{
+    padding: 40px 20px 10px;
+    color: #D4A373;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#line2{
+    color: #F5EBE0;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+#line3{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#line3 p{
+    color: white;
+    font-size: 18px;
+    height: auto;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+.informaion_part{
+    padding: 60px 20px;
+    width: 100%;
+    background-color: #F5EBE0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+    height: auto;
+    padding: 40px;
+    width: 92%;
+    max-width: 1100px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.venue-image {
+    height: 350px;
+    width: 100%;
+    max-width: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.text_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    gap: 15px;
+}
+
+.text_content p {
+    color: #444;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.text_content h2 {
+    color: #111;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.venue-logo {
+    max-width: 250px;
+    max-height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+    .info {
+        flex-direction: column;
+        padding: 24px;
+        gap: 24px;
+    }
+    #line1 {
+        font-size: 36px;
+    }
+    #line2 {
+        font-size: 24px;
+    }
+    .venue-image {
+        height: 250px;
+    }
+    .informaion_part {
+        padding: 40px 15px;
+    }
+}
+
+/* Universal Button Shape */
+button, .btn-booking, input[type="submit"], .btn {
+  background-color: #D4A373 !important;
+  color: white !important;
+  border-radius: 5px !important;
+  border: none !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+button:hover, .btn-booking:hover, input[type="submit"]:hover, .btn:hover {
+  background-color: #1f2937 !important;
+  color: #E2D8A5 !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Plus Jakarta Sans', sans-serif !important; letter-spacing: 1px; }

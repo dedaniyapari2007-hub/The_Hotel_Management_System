@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ---------- Hero ---------- */
+.room1_hero{
+    min-height: 220px;
+    height: auto;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.room1_hero p{
+    font-size: 50px;
+    font-weight: 600;
+    color: #D4A373;
+}
+
+.room1_hero h1{
+    color: #F5EBE0;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+
+#hero_sub{
+    color: #F5EBE0;
+    margin: 20px auto 0 auto;
+    max-width: 600px;
+    opacity: 0.85;
+}
+
+/* ---------- Room body ---------- */
+.room1_body{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 60px 80px;
+    background-color: #F5EBE0;
+    align-items: flex-start;
+}
+
+.room1_gallery{
+    flex: 1 1 420px;
+}
+
+.room1_gallery img{
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.room1_info{
+    flex: 1 1 420px;
+}
+
+.room1_info_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 2px solid #D4A373;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.room1_info_head h2{
+    color: #1f2937;
+    font-size: 2.2rem;
+}
+
+.room1_price .amount{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #D4A373;
+}
+
+.room1_price .per{
+    font-size: 1rem;
+    color: #1f2937;
+    opacity: 0.7;
+}
+
+.room1_desc{
+    color: #1f2937;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.room1_features{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 20px;
+    margin-bottom: 40px;
+}
+
+.feature{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #1f2937;
+    font-size: 0.95rem;
+}
+
+.feature i{
+    color: #D4A373;
+    font-size: 1.2rem;
+    width: 22px;
+    text-align: center;
+}
+
+.room1_book_btn button{
+    height: 60px;
+    width: 250px;
+    color: white;
+    background-color: #D4A373;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.room1_book_btn button:hover{
+    color: #D4A373;
+    background-color: #1f2937;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px){
+    .room1_body{
+        padding: 40px 24px;
+    }
+    .room1_features{
+        grid-template-columns: 1fr;
+    }
+    .room1_hero h1{
+        font-size: 1.8rem;
+    }
+}
+
+/* Universal Button Shape */
+button, .btn-booking, input[type="submit"], .btn {
+  background-color: #D4A373 !important;
+  color: white !important;
+  border-radius: 5px !important;
+  border: none !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+button:hover, .btn-booking:hover, input[type="submit"]:hover, .btn:hover {
+  background-color: #1f2937 !important;
+  color: #E2D8A5 !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Plus Jakarta Sans', sans-serif !important; letter-spacing: 1px; }

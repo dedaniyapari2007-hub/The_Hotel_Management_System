@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: #F0EBE0; /* cream background */
+    color: #1B1B24;
+    padding-bottom: 0px;
+  }
+
+form {
+    max-width: 940px;
+    margin: 60px auto 0;
+    padding: 0 24px;
+  }
+
+.field {
+    margin-bottom: 32px;
+  }
+
+label {
+    display: block;
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 12px;
+  }
+
+label .required {
+    color: #C0392B;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 4px;
+  }
+
+.name-row {
+    display: flex;
+    gap: 16px;
+  }
+
+.name-row input {
+    flex: 1;
+  }
+
+input[type="text"],
+input[type="password"]
+  {
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    background: #FFFFFF;
+    padding: 16px 18px;
+    font-size: 15px;
+    color: #1B1B24;
+  }
+input::placeholder,
+textarea::placeholder {
+    color: #9A9A9A;
+  }
+
+.submit-btn {
+
+    margin-top: 8px;
+    background: #1B1B24;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 32px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+
+  .submit-btn:hover {
+    background: #33333f;
+  }
+#animation{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+  }
+
+  .head_log{
+    font-size: 50px;
+    font-weight: 600;
+    color: #D4A373;
+    text-align: center;
+  }
+
+  .status-message {
+    max-width: 940px;
+    margin: 20px auto;
+    padding: 0 24px;
+    color: #C0392B; /* red */
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .redirection {
+    max-width: 940px;
+    margin: 12px auto;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .head_log {
+      font-size: 32px;
+    }
+    form {
+      padding: 0 16px;
+      margin-top: 30px;
+    }
+  }
+
+/* Universal Button Shape */
+button, .btn-booking, input[type="submit"], .btn {
+  background-color: #D4A373 !important;
+  color: white !important;
+  border-radius: 5px !important;
+  border: none !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+button:hover, .btn-booking:hover, input[type="submit"]:hover, .btn:hover {
+  background-color: #1f2937 !important;
+  color: #E2D8A5 !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Plus Jakarta Sans', sans-serif !important; letter-spacing: 1px; }

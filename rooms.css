@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.booking_now h1{
+    font-size: 30px;
+    color: #D4A373;
+}
+.booking_now h2{
+    font-size: 20px;
+    color: #F5EBE0;
+}
+.booking_now{
+    line-height: 35px;
+    padding: 40px;
+    height: 200px;
+    width: auto;
+    background-color: black;
+    text-align: center;
+}
+
+.dynamic_rooms_container {
+    display: grid;
+    grid-template-columns: repeat(2, 460px);
+    justify-content: center;
+    gap: 80px 150px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.room_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 460px;
+}
+
+.room_card h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-style: italic;
+    color: black;
+}
+
+.room_card img {
+    display: block;
+    width: 510px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room_card img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .booking_now {
+        padding: 30px 15px;
+        height: auto;
+    }
+    .booking_now h1 {
+        font-size: 24px;
+    }
+    .room_card {
+        width: 360px;
+    }
+    .room_card img {
+        width: 360px;
+        height: 290px;
+    }
+    .dynamic_rooms_container {
+        grid-template-columns: 360px;
+        justify-content: center;
+        padding: 30px 15px;
+        gap: 45px;
+    }
+}
+
+.links_of_rooms {
+    background-color: #F5EBE0;
+    min-height: 800px;
+    padding-bottom: 100px;
+}
+
+/* Universal Button Shape */
+button, .btn-booking, input[type="submit"], .btn {
+  background-color: #D4A373 !important;
+  color: white !important;
+  border-radius: 5px !important;
+  border: none !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+button:hover, .btn-booking:hover, input[type="submit"]:hover, .btn:hover {
+  background-color: #1f2937 !important;
+  color: #E2D8A5 !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Plus Jakarta Sans', sans-serif !important; letter-spacing: 1px; }

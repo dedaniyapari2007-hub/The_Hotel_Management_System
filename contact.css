@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+* { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: #F0EBE0; /* cream background */
+    color: #1B1B24;
+    padding-bottom: 0px;
+  }
+.contact_head{
+  min-height: 200px;
+  height: auto;
+  background-color: black;
+  color: #D4A373;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 30px;
+}
+.contact_head h2{
+  font-size: 25px;
+  margin-top: 20px;
+  color: #F5EBE0;
+}
+@media (max-width: 600px) {
+  .contact_head {
+    padding: 30px 15px;
+    font-size: 24px;
+  }
+  .contact_head h2 {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  form {
+    margin-top: 30px;
+    padding: 0 16px;
+  }
+}
+  form {
+    max-width: 940px;
+    margin: 60px auto 0;
+    padding: 0 24px;
+  }
+
+  .field {
+    margin-bottom: 32px;
+  }
+
+  label {
+    display: block;
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 12px;
+  }
+
+  label .required {
+    color: #C0392B;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 4px;
+  }
+
+  .name-row {
+    display: flex;
+    gap: 16px;
+  }
+
+  .name-row input {
+    flex: 1;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    background: #FFFFFF;
+    padding: 16px 18px;
+    font-size: 15px;
+    color: #1B1B24;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #9A9A9A;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: 2px solid #1B1B24;
+    outline-offset: 1px;
+  }
+
+  textarea {
+    min-height: 220px;
+    resize: vertical;
+  }
+
+  .submit-btn {
+    margin-top: 8px;
+    background: #1B1B24;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 32px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+
+  .submit-btn:hover {
+    background: #33333f;
+  }
+
+  @media (max-width: 600px) {
+    .name-row {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+/* Universal Button Shape */
+button, .btn-booking, input[type="submit"], .btn {
+  background-color: #D4A373 !important;
+  color: white !important;
+  border-radius: 5px !important;
+  border: none !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+button:hover, .btn-booking:hover, input[type="submit"]:hover, .btn:hover {
+  background-color: #1f2937 !important;
+  color: #E2D8A5 !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Plus Jakarta Sans', sans-serif !important; letter-spacing: 1px; }
